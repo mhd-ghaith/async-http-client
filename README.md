@@ -1,6 +1,6 @@
 # Asynchronous HTTP Client with Result Aggregation
 
-A Java project that sends HTTP requests to several worker servers **in parallel** and collects their responses into a single ordered list. Built for Lab 2 (Distributed Systems Fundamentals) with `java.net.http.HttpClient` and `CompletableFuture`.
+A Java project that sends HTTP requests to several worker servers **in parallel** and collects their responses into a single ordered list. Built with `java.net.http.HttpClient` and `CompletableFuture`.
 
 ## Table of Contents
 
