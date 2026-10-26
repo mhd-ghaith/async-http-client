@@ -88,6 +88,20 @@ Each set is sent twice: once without headers and once with `X-Debug: true`.
 
 ## Example Output
 
+### 1. Worker server on port 8080
+
+![WebServer 1 running on port 8080](docs/screenshots/server-1-8080.png)
+
+### 2. Worker server on port 8081
+
+![WebServer 2 running on port 8081](docs/screenshots/server-2-8081.png)
+
+### 3. Running `Application` (client output)
+
+![Client output](docs/screenshots/client-output.png)
+
+Text version of the output:
+
 ```
 Result of the multiplication is 2000
 
@@ -99,7 +113,6 @@ Result of the multiplication is 8641975258917814551662700000000000000
 ```
 
 The first two lines come from the request without headers. The last two come from the request with the `X-Debug: true` header.
-
 ## Design Notes
 
 - **Non-blocking requests:** `sendAsync` returns a `CompletableFuture`, so the thread is never blocked while a request is in flight.
